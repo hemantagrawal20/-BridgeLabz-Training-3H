@@ -1,25 +1,11 @@
-// Program to convert kilometers to miles
-import java.util.Scanner;
-
+// Program to convert distance from kilometers to miles
 public class KilometerToMiles {
     public static void main(String[] args) {
-        // Variables
-        double km, miles;
-        final double MILE_CONVERSION_FACTOR = 1.6;
+        double kilometers = 10.8;
+        double milesPerKm = 1.6;
 
-        // Scanner object for user input
-        Scanner input = new Scanner(System.in);
+        double miles = kilometers / milesPerKm;
 
-        // Taking input
-        System.out.print("Enter distance in kilometers: ");
-        km = input.nextDouble();
-
-        // Conversion
-        miles = km / MILE_CONVERSION_FACTOR;
-
-        // Output
-        System.out.println("The total miles is " + miles + " mile for the given " + km + " km");
-
-        input.close();
+        System.out.println("The distance " + kilometers + " km in miles is " + miles);
     }
 }
